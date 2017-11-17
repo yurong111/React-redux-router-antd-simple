@@ -8,9 +8,9 @@ import {Provider} from 'react-redux';
 import toduReducer from '../store/reducer.jsx'
 let store = createStore(toduReducer);
 
-import Home from 'bundle-loader?lazy&name=app-[name]!../component/Home'
-import Blog from 'bundle-loader?lazy&name=app-[name]!../component/Blog'
-import Resume from 'bundle-loader?lazy&name=app-[name]!../component/Resume'
+import Home from 'bundle-loader?lazy&name=app-[name]!../view/Home'
+import Blog from 'bundle-loader?lazy&name=app-[name]!../view/Blog'
+import Resume from 'bundle-loader?lazy&name=app-[name]!../view/Resume'
 
 import Bundle from '../component/Bundle/index'
 
