@@ -20,4 +20,4 @@ export default function createReducer (state = 0, action){
                 num: action.num,
             })
     }
-} 
+}

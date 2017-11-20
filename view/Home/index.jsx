@@ -2,6 +2,9 @@ import React, {PropTypes, Component} from 'react';
 import {Form} from 'antd';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import './index.less'
+import Banner from './Banner';
+
 
 const FormItem = Form.Item;
 
@@ -22,8 +25,8 @@ class Index extends Component {
 
     render() {
         return (
-            <div>
-                hello home
+            <div className="home-box">
+                <Banner/>
             </div>
         )
     }

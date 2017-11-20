@@ -9,25 +9,13 @@ import toduReducer from '../store/reducer.jsx'
 let store = createStore(toduReducer);
 
 import Home from 'bundle-loader?lazy&name=app-[name]!../view/Home'
-import Blog from 'bundle-loader?lazy&name=app-[name]!../view/Blog'
-import Resume from 'bundle-loader?lazy&name=app-[name]!../view/Resume'
+import Header from '../component/Header'
 
 import Bundle from '../component/Bundle/index'
+import './index.less'
 
 const HomeContainer = (props) => (
     <Bundle load={Home}>
-        {(Comm) => <Comm {...props}/>}
-    </Bundle>
-)
-
-const ResumeContainer = (props) => (
-    <Bundle load={Resume}>
-        {(Comm) => <Comm {...props}/>}
-    </Bundle>
-)
-
-const BlogContainer = (props) => (
-    <Bundle load={Blog}>
         {(Comm) => <Comm {...props}/>}
     </Bundle>
 )
@@ -37,29 +25,9 @@ class InitLayout extends React.Component {
 
     render() {
         return (
-            <div>
-                {/*<h1>Welcome React-redux-router-antd!</h1>*/}
-                <ul>
-                    <li>
-                        <Link to="/">
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/resume">
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/blog">
-                            Blog
-                        </Link>
-                    </li>
-                </ul>
-
+            <div className="entry-box">
+                <Header/>
                 <Route exact path="/" component={HomeContainer}/>
-                <Route path="/resume" component={ResumeContainer}/>
-                <Route path="/blog"  component={BlogContainer}/>
             </div>
         )
     }
