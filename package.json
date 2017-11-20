@@ -21,6 +21,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "bundle-loader": "^0.5.5",
     "css-loader": "^0.28.1",
+    "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.29.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
@@ -31,6 +32,7 @@
     "redux": "^3.7.2",
     "redux-devtools": "^3.4.1",
     "style-loader": "^0.17.0",
+    "url-loader": "^0.6.2",
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.9.4"
   },
